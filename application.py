@@ -35,7 +35,7 @@ def result():
         to_predict_list[10] = float(request_list[10])
         to_predict_df = pd.DataFrame([to_predict_list], columns = ['carat','clarity','color','culet','cut','depth','fluorescence','lxwRatio','polish','symmetry','table'])
         result = ValuePredictor(to_predict_df)
-        prediction= int(np.exp(result))
+        prediction= "${:.4g}".format(np.exp(result))
         return render_template("Result.html",prediction=prediction)
 if __name__ == "__main__":
 	application.run(debug=True)
