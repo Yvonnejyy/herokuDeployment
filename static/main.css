@@ -1,24 +1,28 @@
 body{
-    background: cornflowerblue;
+    background: #807182;
     height: 100vh;
 }
 h3{
     text-align: center;
+    font-size: 40px;
 }
 .register_page{
-    width: 360px;
+    width: 500px;
     margin: auto;
 }
 .form{
     font-family: 'Montserrat',sans-serif;
     position: relative;
     z-index: 1;
-    background: #ffff;
-    max-width: 200px;
+    background: #F7B1AB;
+    max-width: 500px;
     margin: 10px auto 100px;
     padding: 30px;
     font-size: 15px;
     display: grid;
+    grid-template-columns: 200px 200px;
+    column-gap: 20px;
+    row-gap: 1em;
 }
 .form input{
     font-family: 'Montserrat',sans-serif;
@@ -41,6 +45,7 @@ h3{
     padding: 5px;
     box-sizing: border-box;
     font-size: 15px;
+  
 }
 .submit{
     font-family: 'Montserrat',sans-serif
@@ -48,4 +53,15 @@ h3{
     text-transform: uppercase;
     font-weight: 600;
     color: cornflowerblue;
+}
+button{
+        border: 1px solid rgba(0,0,0,.2);
+        height: 38px;
+        line-height: 38px;
+        width: 100px;
+        border-radius: 19px;
+        align-items: center
+}
+.img{
+        align-items: center
 }
