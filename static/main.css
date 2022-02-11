@@ -61,9 +61,6 @@ button{
         width: 100px;
         border-radius: 19px;
         align-items: center;
-        position: absolute;
-        right:    50px;
-        bottom:   30px;
 }
 .img{
         align-items: center
