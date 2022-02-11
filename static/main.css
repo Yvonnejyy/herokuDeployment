@@ -61,6 +61,8 @@ button{
         width: 100px;
         border-radius: 19px;
         align-items: center;
+        position: relative;
+        top: 0px; left: 90px;
 }
 .img{
         align-items: center
@@ -74,9 +76,8 @@ h4{
     margin-left: auto;
     margin-right: auto;
 }
-.topnav {
-  position: fixed;
-  bottom: 208px;
-  right: 520px;
+.p {
+  position: relative;
+  top: 50px; left: -200px;
 
 }
