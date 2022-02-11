@@ -41,8 +41,8 @@ def result():
 @application.route('/how_work', methods=['GET', 'POST'])
 def how_work():
     if request.method == 'POST':
-        return redirect(url_for('index'))
-    return render_template('cool_form.html')
+        return render_template("test.html")
+    return render_template("test.html")
 
 if __name__ == "__main__":
 	application.run(debug=True)
