@@ -38,11 +38,17 @@ def result():
         prediction= int(np.exp(result))
         return render_template("Result.html",prediction=prediction)
 
-@application.route('/how_work', methods=['GET', 'POST'])
-def how_work():
+@application.route('/test', methods=['GET', 'POST'])
+def test():
     if request.method == 'POST':
-        return render_template("test.html")
-    return render_template("test.html")
+        # do stuff when the form is submitted
+
+        # redirect to end the POST handling
+        # the redirect can be to the same route or somewhere else
+        return redirect(url_for('index'))
+
+    # show the form, it wasn't submitted
+    return render_template('test.html')
 
 if __name__ == "__main__":
 	application.run(debug=True)
