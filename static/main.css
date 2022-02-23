@@ -81,3 +81,27 @@ h4{
   top: 50px; left: -200px;
 
 }
+
+t {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#aboutapp {
+  width: 800px;
+  height:300px;
+  border: 5px solid black;
+  padding: 50px;
+  margin: 20px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-150px; /* this is half the height of your div*/  
+  margin-left:-400px; /*this is half of width of your div*/
+}
+
+about{
+    text-align: center;
+    font-size: 20px;
+}
